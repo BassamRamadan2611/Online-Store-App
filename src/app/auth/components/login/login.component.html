@@ -1,0 +1,55 @@
+
+
+
+<div class="content">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-6">
+    <img src="assets/images/login.svg" alt="Image" class="img-fluid">
+    </div>
+    <div class="col-md-6 contents">
+    <div class="row justify-content-center">
+    <div class="col-md-8">
+    <div class="mb-4">
+    <h1>Login</h1>
+   
+    </div>
+    <form action="#" method="post">
+    <div class="form-group first mb-4" >
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" name="email" [(ngModel)]="email">
+    </div>
+    <div class="form-group last mb-4">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" name="password" [(ngModel)]="password">
+    </div>
+   
+    <div >
+        <button type="submit" class="btn btn-primary"(click)="login()">Login</button>
+
+                <a routerLink="/register"  style="text-decoration: none;cursor: pointer; padding-left: 20px; " class="pl-3">Need Account ? <span class="text-danger">Register</span></a>
+
+        </div>
+    <span class="d-block text-center my-4 text-muted">&mdash; or sign in with &mdash;</span>
+    <div class="social-login">
+        <a  (click)="signInWithGoogle()" style="text-decoration: none; cursor: pointer;">
+            <div class="card shadow text-center">
+                <div class="card-body">
+                    <img src="assets/images/google.png" style="width: 30px; height:30px">Sign In With Google
+                </div>
+            </div>
+
+        </a>
+    </div>
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+    

@@ -1,0 +1,41 @@
+
+
+<div class="product-details">
+<div class="box">
+
+    <div class="row" *ngIf="!loading">
+        <div class="col-md-5 col-sm-12 " >
+            <img src="{{data.thumbnail}}" alt="image" class="img">
+        </div>
+        <div class="col-md-7 col-sm-12 ">
+            <div class="info " style="padding-top: 50px;">
+                <h1 > <strong >Title :</strong> {{data.title}}</h1> 
+                    <h1 > <strong>Price : </strong>{{data.price}} $</h1>
+                    <h1> <strong>Description :</strong> <span>{{data.description}}</span></h1>
+
+                    <h1><strong>Rating : </strong>{{data.rating}}</h1>
+                    <h1><strong>Category : </strong> {{data.category}}</h1>
+                    <h1><strong>DiscountPercentage : </strong> {{data.discountPercentage}} %</h1>
+                    <h1><strong>Price After Discount</strong> {{data.price - ((data.discountPercentage /100 ) * data.price)}} $</h1>
+
+            </div>
+            <!--
+                div class="imgs " *ngFor="let img of imgs" >
+                <div class=" m-4 col-md-2">
+                    <img src="{{img}}" style="width: 100px; height: 100px;"> 
+                </div>
+              
+              </div>
+            -->
+            
+
+        </div>
+    </div>
+    <div class="text-center" *ngIf="loading">
+<app-spinner-loader></app-spinner-loader>
+    </div>
+
+
+   
+</div>
+</div>

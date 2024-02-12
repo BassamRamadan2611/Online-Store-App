@@ -1,0 +1,11 @@
+.box{
+box-sizing: border-box;
+   
+ padding-top: 50px;
+}
+.imgs{
+    display: inline-block;
+}
+.product-details{
+    background-color: #f8f8f8;
+}

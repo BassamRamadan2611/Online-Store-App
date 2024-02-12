@@ -1,0 +1,51 @@
+
+.card-top{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+ 
+
+
+}
+
+
+.example-card {
+    max-width: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    cursor: pointer;
+    margin: 15px 0 15px 15px;
+    color: #111;
+    background-color: #fff;
+ 
+  }
+
+.btn{
+    background-color: #3adb6b;
+    color: #fff;
+}
+
+  .example-card  img{
+    width: 200px;
+    height: 200px;
+
+ 
+}
+
+.card{
+    padding: 25px;
+    margin: 15px 0 15px 15px;
+    color: #111;
+    background-color: #f8f8f8;
+    font-weight: 600;
+    border: none;
+    border-radius: 0%;
+}
+
+.search{
+    padding: 20px;
+
+}

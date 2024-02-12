@@ -1,0 +1,12 @@
+
+<div class="all">
+    <div class="scroll-arrow to-top" (click)="scrollToTop()" [ngClass]="{'show-scrollTop': windowScrolled}" >
+
+        <i class="fas fa-chevron-up " aria-hidden="true"></i>
+    </div>
+
+</div>
+
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
+<app-footer></app-footer>

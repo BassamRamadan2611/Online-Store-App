@@ -1,0 +1,23 @@
+
+<mat-card class="example-card">
+    <mat-card-content>
+
+        <div class="item"  routerLink="/details/{{data.id}}">
+            <img src="{{data.thumbnail}}" alt=""  class="img-fluid">
+            <h3  style="white-space: nowrap;overflow: hidden; text-overflow: ellipsis; max-width: 100ch;font-weight: 600;text-align: center;">{{data.title}}</h3>
+            <p style="white-space: nowrap;overflow: hidden; text-overflow: ellipsis; max-width: 100ch;">{{data.description }}</p>
+            </div>
+            <p > <span style="color: #202020;font-weight: 500;text-decoration: line-through;">${{data.price}} </span>   |   <strong style="color: red;padding-right: 3px;">  خصم {{data.discountPercentage}} % </strong> </p>
+            <p style="color: blue;"> {{data.price - ((data.discountPercentage /100 ) * data.price)}} $</p>
+            <button class="btn" *ngIf="!addBtn" (click)="addBtn =true">Add To Cart</button>
+            
+            
+            <div class="d-flex w-70" *ngIf="addBtn">
+                <input type="number" class="form-control m-2" [(ngModel)]="ammount">
+                <button class="btn  m-2" (click)="add();addBtn= false ">Add</button>
+            </div>
+    </mat-card-content>
+
+    
+  </mat-card>
+

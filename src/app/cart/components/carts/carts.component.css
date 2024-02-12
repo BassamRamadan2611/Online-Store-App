@@ -1,0 +1,45 @@
+.cartBox{
+ background-color: #f8f8f8;
+   
+    padding: 50px 20px;
+    margin: 50px 0;
+    color: #202020;
+}
+.table .quantity{
+display: flex;
+justify-content: space-between;
+}
+.table input{
+    margin: 0 20px;
+}
+
+tr td{
+border-bottom: 0;
+
+}
+tr th {
+    background-color: #f8f8f8;
+}
+tr img{
+    width: 80px;
+    height: 80px;
+ 
+
+}
+input{text-align: center;}
+.header-cart{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+padding-top: 30px;
+}
+.header-cart span{
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.header-cart span:hover{
+    background-color: red;
+    color: #FFF !important;
+    box-shadow: 0px 5px 10px rgba(#000000, .3);
+}

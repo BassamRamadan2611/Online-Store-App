@@ -1,0 +1,66 @@
+<!--
+<div class="all d-flex justify-content-around">
+  <div class="1">
+    OSHOP
+
+  </div>
+  <div class="1">
+    2gfhkjg
+  </div>
+  <div class="1">
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+
+    <button mat-icon-button class="example-icon">     <i class="fas fa-cart-plus "  ></i></button>
+    <button mat-icon-button class="example-icon">     <i class=" fas fa-regular fa-user"></i></button>
+  </div>
+</div>
+
+-->
+
+
+<!--end header-->
+
+
+<nav>
+  <div class="container-fluid">
+
+
+
+  <ul>
+    <li >    <a routerLink="/" style="text-decoration: none; color: #3adb6b;">
+      <span style="font-size: 1.5rem; font-weight: bold;">OStore</span>
+    </a>
+</li>
+
+
+
+<li >    <a routerLink="/" style="text-decoration: none; color: #3adb6b;">
+  Home
+</a>
+</li>
+
+
+    <li>
+      <button mat-icon-button class="example-icon"  routerLink="/login"  >  <img src="assets/images/user.png"></button>
+
+    </li>
+    <li>
+      <button mat-icon-button class="example-icon" routerLink="/cart"   matBadge="{{cartItemCount}}" matBadgePosition="after" matBadgeColor="accent"> <img src="assets/images/shopping-cart.png"></button>
+
+    </li>
+    <!--
+
+ <li> <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon"  >
+  <div class="image">
+    <img src="assets/images/love.png">
+  </div></button>
+</li>
+   -->
+  </ul>
+
+</div>
+</nav>
+
+

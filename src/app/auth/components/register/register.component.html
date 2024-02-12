@@ -1,0 +1,40 @@
+
+        
+
+
+<div class="content">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-6">
+    <img src="assets/images/register.svg" alt="Image" class="img-fluid">
+    </div>
+    <div class="col-md-6 contents">
+    <div class="row justify-content-center">
+    <div class="col-md-8">
+    <div class="mb-4">
+    <h1>Register</h1>
+   
+    </div>
+    <form action="#" method="post">
+        <div class="form-group first mb-4">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" name="email" [(ngModel)]="email">
+        </div>
+        <div class="form-group last mb-4">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" name="password" [(ngModel)]="password">
+        </div>
+       
+        <div >
+            <button type="submit" class="btn btn-primary"(click)="register()">Register</button>
+            <a routerLink="/login"  style="text-decoration: none;padding-left: 20px;">Have Account ? <span class="text-danger">Login</span></a>
+
+        
+        </div>
+      </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>

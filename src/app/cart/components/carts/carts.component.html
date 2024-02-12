@@ -1,0 +1,56 @@
+<div class="img text-center " style="padding-top: 100px;" *ngIf="!cartDeleted">
+  <img src="assets/images/empty.jfif" style="width: 300px;">
+  <h1> Your Cart is Empty </h1>
+
+</div>
+
+
+
+<div class="cartBox" *ngIf="cartDeleted">
+
+<div class="container">
+    <h1 style="padding-top: 50px;">My Cart</h1>
+
+    <div class="table-responsive">
+    <table class="table ">
+        <thead>
+            <tr>
+                <th>Products</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th style="width: 25%; text-align: center;">Quantity</th>
+                <th>Total</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of cartProducts ;let i=index">
+                <td ><img src="{{product.item.thumbnail}}" alt=""></td>
+                <td style="padding-top: 40px;">{{product.item.title}}</td>
+                <td style="padding-top: 40px;">{{product.item.price}}</td>
+                <td style="padding-top: 20px;">
+                    <div class="quantity">
+                        <button class="btn btn-dark m-2" (click)="addAmount(i)">+</button>
+                        <input type="number" class="form-control"(change)="detectChanges()" [(ngModel)]="product.quantity" min="1">
+                        <button class="btn btn-dark m-2" (click)="minsAmount(i)">-</button>
+
+                    </div>
+                </td>
+                <td style="padding-top: 40px;">{{product.quantity * product.item.price}}</td>
+                <td style="padding-top: 20px;">
+                    <button class="btn btn-danger" data-toggle="modal" data-target="#myModal"  (click)="deleteProduct(product.id)">Delete</button>
+
+
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+    <hr>
+    <h1 class="text-center" style="font-weight: bold;">  Total : {{total}}</h1>
+
+    </div>
+</div>
+
+
+</div>
